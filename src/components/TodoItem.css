@@ -1,0 +1,23 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+  
+  .todo-item.completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .todo-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  .todo-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
